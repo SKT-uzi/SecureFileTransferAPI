@@ -1,0 +1,31 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "ResumableFileTransferDBConnectionString": "Data Source=../Rfu.demo.db",
+    "RuntimefilesStorageConnectionString": "UseDevelopmentStorage=true",
+    "EncryptionKey": "replace-with-a-local-random-value",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "StorageType": "AzureBlob",
+    "AzureBlobUploadBasePath": "runtime-files/resumable-file-transfer/upload",
+    "AzureFileShareTargetBasePath": "files/LocalUser",
+    "AzureBlobTargetBasePath": "runtime-files/resumable-file-transfer/target",
+    "AzureBlobMalwareBasePath": "runtime-files/resumable-file-transfer/malware",
+    "JWTExpireMinutes": "60",
+    "MaxFileSize": "2147483648",
+    "MaxFileNameLength": "1024",
+    "LargeFileSize": "314572800",
+    "ForceExpirationDay": "7",
+    "ForceCompletionMinute": "1",
+    "FileCompletionQueueName": "resumable-file-transfer-files",
+    "LargeFileCompletionQueueName": "resumable-file-transfer-files-large",
+    "NeedScanning": "false",
+    "MovingFileQueueName": "resumable-file-transfer-files",
+    "EmailSubjectSoftwareTokenInvalid": "ResumableFileTransfer - software token is invalid",
+    "InvalidCharactersInName": "\t&",
+    "AzureWebJobs.HttpExample.Disabled": "true",
+    "HandleExpiredFileTrigger": "0 1 * * * *",
+    "HandleMissingFileTrigger": "0 1 * * * *",
+    "ScanningUrl": "http://localhost:26710/api/scanning"
+  }
+}

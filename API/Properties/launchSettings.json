@@ -1,0 +1,39 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:49319",
+      "sslPort": 44374
+    }
+  },
+  "profiles": {
+    "API": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:49319",
+      "launchBrowser": true,
+      "launchUrl": "swagger/index.html",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "StorageType": "AzureBlob",
+        "AzureBlobUploadBasePath": "runtime-files/resumable-file-transfer/upload",
+        "AzureFileShareTargetBasePath": "files/LocalUser",
+        "AzureBlobTargetBasePath": "runtime-files/resumable-file-transfer/target",
+        "JWTExpireMinutes": "60",
+        "MaxFileSize": "2147483648",
+        "MaxFileNameLength": "1024",
+        "LargeFileSize": "314572800",
+        "ForceExpirationDay": "7",
+        "ForceCompletionMinute": "1",
+        "FileCompletionQueueName": "resumable-file-transfer-files",
+        "LargeFileCompletionQueueName": "resumable-file-transfer-files-large",
+        "NeedScanning": "true",
+        "MovingFileQueueName": "resumable-file-transfer-files",
+        "EmailSubjectSoftwareTokenInvalid": "ResumableFileTransfer - software token is invalid",
+        "InvalidCharactersInName": "\t&"
+      }
+    }
+  }
+}
